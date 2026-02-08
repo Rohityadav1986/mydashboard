@@ -1,6 +1,10 @@
 {
+  "name": "azure-timer-function",
+  "version": "1.0.0",
   "main": "timerFunction/index.js",
   "engines": {
     "node": "18.x"
   }
 }
+
+

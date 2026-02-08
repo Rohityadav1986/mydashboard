@@ -7,16 +7,9 @@ module.exports = async function (context, myTimer) {
     context.log("⏰ Timer trigger started");
 
     try {
-        // 1️⃣ Auth
         const authClient = await authenticate();
-
-        // 2️⃣ Fetch data
         const rawData = await fetchAllData(authClient);
-
-        // 3️⃣ Normalize
         const finalData = normalizeData(rawData);
-
-        // 4️⃣ Send to Log Analytics
         await sendToLAW(finalData);
 
         context.log("✅ Data successfully sent to LAW");
@@ -26,5 +19,3 @@ module.exports = async function (context, myTimer) {
     }
 };
 
-
-context.log("Timer function executed at:", new Date().toISOString());
