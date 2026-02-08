@@ -25,3 +25,6 @@ module.exports = async function (context, myTimer) {
         throw err;
     }
 };
+
+
+context.log("Timer function executed at:", new Date().toISOString());
