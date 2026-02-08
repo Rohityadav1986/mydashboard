@@ -1,0 +1,6 @@
+{
+  "main": "timerFunction/index.js",
+  "engines": {
+    "node": "18.x"
+  }
+}
